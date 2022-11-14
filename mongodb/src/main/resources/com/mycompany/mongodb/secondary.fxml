@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mongodb.SecondaryController">
+   <children>
+      <Label layoutX="32.0" layoutY="72.0" prefHeight="46.0" prefWidth="153.0" text="NOMBRE" />
+      <Label layoutX="30.0" layoutY="145.0" prefHeight="25.0" prefWidth="107.0" text="CODIGO" />
+      <Label layoutX="323.0" layoutY="85.0" prefHeight="25.0" prefWidth="107.0" text="TIPO ALMENDRA" />
+      <ComboBox fx:id="TipoAlmedra" layoutX="446.0" layoutY="85.0" prefWidth="150.0" />
+      <Label layoutX="323.0" layoutY="152.0" prefHeight="25.0" prefWidth="107.0" text="TIPO RELLENO" />
+      <ComboBox fx:id="TipoRelleno" layoutX="446.0" layoutY="152.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="204.0" prefHeight="25.0" prefWidth="107.0" text="TIPO CHOCOLATE" />
+      <ComboBox fx:id="TipoChocolate" layoutX="161.0" layoutY="210.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="260.0" prefHeight="25.0" prefWidth="107.0" text="DESCRIPCION" />
+      <TextField fx:id="Descripcion" layoutX="161.0" layoutY="260.0" prefHeight="25.0" prefWidth="419.0" />
+      <TextField fx:id="Nombre" layoutX="161.0" layoutY="85.0" />
+      <TextField fx:id="Codigo" layoutX="161.0" layoutY="145.0" />
+      <Button layoutX="38.0" layoutY="317.0" mnemonicParsing="false" onAction="#MODIFICA" prefHeight="46.0" prefWidth="141.0" text="MODIFICAR" />
+      <Button layoutX="196.0" layoutY="317.0" mnemonicParsing="false" onAction="#BORRA" prefHeight="46.0" prefWidth="141.0" text="BORRAR" />
+      <Button fx:id="volver" layoutX="350.0" layoutY="317.0" mnemonicParsing="false" onAction="#VOLVER" prefHeight="46.0" prefWidth="107.0" text="VOLVER" />
+      <Button layoutX="482.0" layoutY="317.0" mnemonicParsing="false" onAction="#ELIMINAR" prefHeight="46.0" prefWidth="98.0" text="ELIMINAR" />
+   </children>
+</AnchorPane>
